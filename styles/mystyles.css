@@ -17,3 +17,15 @@
 .input-group-text {
     min-width: 100%;
 }
+
+.btn {
+    margin: 0 10px;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
