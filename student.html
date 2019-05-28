@@ -33,9 +33,15 @@
                     </div>
                     <div class="input-group mb-3">	
 						<div class="input-group-prepend">
-                            <span class="input-group-text">Umieść tu pracę: </span>
+                            <span class="input-group-text" style="width: 100em;">Umieść tu pracę: </span>
                         </div>
-						<input type="file" id="input-file-now" class="file-upload" />
+						
+						<input type="file" id="input-file-now" class="file-upload" multiple="" onchange="btnBrowseFiles(event)" />
+						
+						<div class="upload-drop-zone" id="drop-zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+							Just drag and drop files here
+						</div>
+						
                     </div>
 
                     <div class="row">
