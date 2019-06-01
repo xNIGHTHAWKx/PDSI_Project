@@ -30,6 +30,11 @@ a:visited {
     color: white;
 }
 
+.teacher-prepend {
+    min-width: 55%;
+
+}
+
 .dropzone {
   color: #ccc;
   border-style: dashed;
