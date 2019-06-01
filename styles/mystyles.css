@@ -30,7 +30,7 @@ a:visited {
     color: white;
 }
 
-.upload-drop-zone {
+.dropzone {
   color: #ccc;
   border-style: dashed;
   border-color: #ccc;
