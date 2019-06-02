@@ -31,19 +31,19 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">Imie: </span>
                         </div>
-                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="first-name-input" type="text" pattern="[A-Za-z]+" class="form-control" aria-label="Username">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Nazwisko: </span>
                         </div>
-                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="last-name-input" type="text" pattern="[A-Za-z]+" class="form-control" aria-label="Username">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Index: </span>
                         </div>
-                        <input id="index-input" type="text" class="form-control" aria-label="Username"
+                        <input id="index-input" type="number" max="999999" class="form-control" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
@@ -54,6 +54,9 @@
                             aria-describedby="basic-addon1">
                     </div>
                     <button id="login-button" type="button" class="btn btn-success">Zaloguj</button>
+                    <div id="invalid-credentials" style="display: none;">
+                        <span style="color: red;">Wprowadzone dane są niepoprawne!</span>
+                    </div>
                 </div>
             </div>
         </div>
