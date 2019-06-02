@@ -1,9 +1,9 @@
 window.onload = function () {
     var usersDataArray = [
-        { index: "teacher1", password: "123456", role: "teacher" },
-        { index: "teacher2", password: "123456", role: "teacher" },
-        { index: "student1", password: "123456", role: "student" },
-        { index: "student2", password: "123456", role: "student" }
+        { index: "111111", password: "123456", role: "teacher" },
+        { index: "222222", password: "123456", role: "teacher" },
+        { index: "999999", password: "123456", role: "student" },
+        { index: "000000", password: "123456", role: "student" }
     ];
 
     var firstNameInput = document.getElementById("first-name-input");
@@ -35,11 +35,6 @@ window.onload = function () {
     passwordInput.addEventListener("focus", function () {
         document.getElementById("invalid-credentials").style.display = "none";
     });
-
-    function alphaOnly(event) {
-        var key = event.keyCode;
-        return ((key >= 65 && key <= 90) || key == 8);
-    }
 }
 
 Dropzone.options.myAwesomeDropzone = {
