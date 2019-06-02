@@ -25,37 +25,43 @@
     <div class="container text-center">
         <div class="row justify-content-center">
             <div class="col-md-6">
-            <div id="login-container">
-                <h1>Logowanie</h1>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Imie: </span>
+                <div id="login-container">
+                    <h1>Logowanie</h1>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Imie: </span>
+                        </div>
+                        <input id="first-name-input" type="text" pattern="[A-Za-z]+" class="form-control" aria-label="Username">
                     </div>
-                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Nazwisko: </span>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Nazwisko: </span>
+                        </div>
+                        <input id="last-name-input" type="text" pattern="[A-Za-z]+" class="form-control" aria-label="Username">
                     </div>
-                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Index: </span>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Index: </span>
+                        </div>
+                        <input id="index-input" type="number" max="999999" class="form-control" aria-label="Username"
+                            aria-describedby="basic-addon1">
                     </div>
-                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Hasło: </span>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Hasło: </span>
+                        </div>
+                        <input id="password-input" type="password" class="form-control" aria-label="Username"
+                            aria-describedby="basic-addon1">
                     </div>
-                    <input type="password" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                    <button id="login-button" type="button" class="btn btn-success">Zaloguj</button>
+                    <div id="invalid-credentials" style="display: none;">
+                        <span style="color: red;">Wprowadzone dane są niepoprawne!</span>
+                    </div>
                 </div>
-                <button type="button" class="btn btn-success"><a href="student.html">Zaloguj jako student</a></button>
-                <button type="button" class="btn btn-success"><a href="teacher.html">Zaloguj jako dydaktyk</a></button>
             </div>
         </div>
-    </div>
+        <a id="student-href" href="student.html"></a>
+        <a id="teacher-href" href="teacher.html"></a>
 </body>
 
 </html>
