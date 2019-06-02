@@ -32,4 +32,14 @@ a:visited {
 
 .teacher-prepend {
     min-width: 55%;
+
+}
+
+.dropzone {
+  color: #ccc;
+  border-style: dashed;
+  border-color: #ccc;
+  width: 100em;
+  line-height: 200px;
+  text-align: center
 }
