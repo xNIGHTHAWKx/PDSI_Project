@@ -12,3 +12,13 @@ Dropzone.options.myAwesomeDropzone = {
     else { done("ok"); }
   }
 };
+// ------------------------ //
+function confirm_exit() {
+  var answer = confirm("Czy na pewno chcesz zakończyć pracę przed końcem czasu?");
+  if (answer) {
+    location.href = "index.html";
+  }
+  else {
+    // nothing
+  }
+}

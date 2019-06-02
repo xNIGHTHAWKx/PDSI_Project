@@ -3528,13 +3528,3 @@ function __guardMethod__(obj, methodName, transform) {
     return undefined;
   }
 }
-
-function confirm_exit() {
-  var answer = confirm("Czy na pewno chcesz zakończyć pracę przed końcem czasu?");
-  if (answer) {
-    location.href = "index.html";
-  }
-  else {
-    // nothing
-  }
-}
