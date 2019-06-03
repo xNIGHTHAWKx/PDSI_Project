@@ -43,3 +43,7 @@ a:visited {
   line-height: 200px;
   text-align: center
 }
+
+#folder_input {
+    height: 100%;
+} 

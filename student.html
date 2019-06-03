@@ -3,18 +3,18 @@
 
 <head>
     <div id="drop-template-preview" style="display: none;">
-		<div class="dz-preview dz-file-preview">
-			<div class="dz-details">
-				<table>
-					<td class="dz-filename" data-dz-name></td>
-					<td class="dz-size" data-dz-size></td>
-					<td class="dz-error-message" data-dz-errormessage></td>
-				</table>
-			</div>
-		</div>
-	</div>
-	
-	<meta charset="UTF-8">
+        <div class="dz-preview dz-file-preview">
+            <div class="dz-details">
+                <table>
+                    <td class="dz-filename" data-dz-name></td>
+                    <td class="dz-size" data-dz-size></td>
+                    <td class="dz-error-message" data-dz-errormessage></td>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kolo Lotto</title>
@@ -30,12 +30,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-	<script src="js/dropzone.js"></script>
+    <script src="js/dropzone.js"></script>
     <script src="js/app.js"></script>
 	<link rel="icon" href="images/logo.png" type="image/x-icon">
 </head>
 
-<body>
+<body onload="countDownTimer()">
     <div class="container text-center">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -45,21 +45,21 @@
                     <div class="justify-content-md-center" id="opis">
                         <h3>Tekst od nauczyciela, opis zadania, notatka</h3>
                     </div>
-                    <div class="input-group mb-3">	
-						<div class="input-group-prepend">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
                             <span class="input-group-text" style="width: 100em;">Umieść tu pracę: </span>
                         </div>
-						
-						<form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
-						<div class="dropzone-previews"></div>
-						
+
+                        <form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
+                        <div class="dropzone-previews"></div>
+
                     </div>
                     <div class="row">
                         <div class="col left">
-                            <button type="button" id="zakoncz" class="btn btn-danger">Zakończ</button>
+                            <button type="button" id="zakoncz" class="btn btn-danger" onclick="confirm_exit()"">Zakończ</button>
                         </div>
-                        <div class="col right" id="timer">
-                            <button type="button" id="zakoncz" class="btn btn-danger">0:21:47</button>
+                        <div class=" col right" id="timer">
+                                <button type="button" id="zakoncz_timer" class="btn btn-danger">0:21:47</button>
                         </div>
                     </div>
                 </div>
